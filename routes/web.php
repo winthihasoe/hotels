@@ -4,16 +4,16 @@ use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 // Design One Routes
-Route::get('/1', [PageController::class, 'homeOne'])->name('homeOne');
-Route::get('/1/about-us', [PageController::class, 'aboutOne'])->name('aboutOne');
-Route::get('/1/contact-us', [PageController::class, 'contactOne'])->name('contactOne');
+Route::get('/starter', [PageController::class, 'homeOne'])->name('homeOne');
+Route::get('/starter/about-us', [PageController::class, 'aboutOne'])->name('aboutOne');
+Route::get('/starter/contact-us', [PageController::class, 'contactOne'])->name('contactOne');
 
 // Design Two Routes
-Route::get('/2', [PageController::class, 'homeTwo'])->name('homeTwo');
-Route::get('/2/about-us', [PageController::class, 'aboutTwo'])->name('aboutTwo');
-Route::get('/2/contact-us', [PageController::class, 'contactTwo'])->name('contactTwo');
+Route::get('/business', [PageController::class, 'homeTwo'])->name('homeTwo');
+Route::get('/business/about-us', [PageController::class, 'aboutTwo'])->name('aboutTwo');
+Route::get('/business/contact-us', [PageController::class, 'contactTwo'])->name('contactTwo');
 
 // Design Three Routes
-Route::get('/3', [PageController::class, 'homeThree'])->name('homeThree');
-Route::get('/3/about-us', [PageController::class, 'aboutThree'])->name('aboutThree');
-Route::get('/3/contact-us', [PageController::class, 'contactThree'])->name('contactThree');
+Route::get('/enterprise', [PageController::class, 'homeThree'])->name('homeThree');
+Route::get('/enterprise/about-us', [PageController::class, 'aboutThree'])->name('aboutThree');
+Route::get('/enterprise/contact-us', [PageController::class, 'contactThree'])->name('contactThree');
