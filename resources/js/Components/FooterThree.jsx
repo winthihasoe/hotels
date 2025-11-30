@@ -285,7 +285,10 @@ function FooterThree() {
                             gap: 2,
                         }}
                     >
-                        <Typography variant="body2" sx={{ color: "#a5d6a7" }}>
+                        <Typography
+                            variant="body2"
+                            sx={{ color: "#a5d6a7", fontSize: "0.7rem" }}
+                        >
                             © {currentYear} Mountain Haven Lodge. All rights
                             reserved. | Eco-Certified Resort
                         </Typography>
@@ -301,6 +304,7 @@ function FooterThree() {
                                     variant="body2"
                                     sx={{
                                         color: "#a5d6a7",
+                                        fontSize: "0.7rem",
                                         cursor: "pointer",
                                         "&:hover": { color: "white" },
                                     }}
@@ -338,7 +342,7 @@ function FooterThree() {
                         >
                             <Typography
                                 variant="caption"
-                                sx={{ color: "#a5d6a7" }}
+                                sx={{ color: "#a5d6a7", fontSize: "0.6rem" }}
                             >
                                 We accept:
                             </Typography>

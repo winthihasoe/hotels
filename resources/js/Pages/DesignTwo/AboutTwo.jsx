@@ -197,12 +197,12 @@ function AboutTwo() {
                         variant="h2"
                         fontWeight="bold"
                         gutterBottom
-                        sx={{ fontSize: { xs: "2.5rem", md: "3.5rem" } }}
+                        sx={{ fontSize: { xs: "2rem", md: "3rem" } }}
                     >
                         About Seaside Paradise
                     </Typography>
                     <Typography
-                        variant="h6"
+                        variant="subtitle1"
                         sx={{ maxWidth: 700, mx: "auto", lineHeight: 1.8 }}
                     >
                         Where luxury meets the ocean, creating unforgettable
@@ -220,6 +220,7 @@ function AboutTwo() {
                                 <Typography
                                     variant="h3"
                                     fontWeight="bold"
+                                    fontSize={{ xs: "2rem", sm: "3rem" }}
                                     sx={{
                                         background:
                                             "linear-gradient(135deg, #1976d2 0%, #42a5f5 100%)",
@@ -230,7 +231,11 @@ function AboutTwo() {
                                 >
                                     {stat.number}
                                 </Typography>
-                                <Typography variant="h6" color="text.secondary">
+                                <Typography
+                                    fontSize={{ xs: "1rem", sm: "1.1rem" }}
+                                    variant="h6"
+                                    color="text.secondary"
+                                >
                                     {stat.label}
                                 </Typography>
                             </Box>
@@ -273,7 +278,7 @@ function AboutTwo() {
                                 }}
                             />
                             <Typography
-                                variant="h3"
+                                variant="h4"
                                 fontWeight="bold"
                                 gutterBottom
                                 sx={{ color: "#1976d2" }}
@@ -281,7 +286,7 @@ function AboutTwo() {
                                 Our Journey
                             </Typography>
                             <Typography
-                                variant="body1"
+                                variant="body2"
                                 color="text.secondary"
                                 paragraph
                                 sx={{ lineHeight: 1.8 }}
@@ -293,7 +298,7 @@ function AboutTwo() {
                                 celebrates the beauty of the ocean.
                             </Typography>
                             <Typography
-                                variant="body1"
+                                variant="body2"
                                 color="text.secondary"
                                 paragraph
                                 sx={{ lineHeight: 1.8 }}
@@ -306,7 +311,7 @@ function AboutTwo() {
                                 prestigious Best Beach Resort award.
                             </Typography>
                             <Typography
-                                variant="body1"
+                                variant="body2"
                                 color="text.secondary"
                                 sx={{ lineHeight: 1.8 }}
                             >
@@ -324,7 +329,7 @@ function AboutTwo() {
             <Container maxWidth="lg" sx={{ py: 8 }}>
                 <Box sx={{ textAlign: "center", mb: 6 }}>
                     <Chip
-                        icon={<Waves />}
+                        icon={<Waves color="white" />}
                         label="OUR VALUES"
                         sx={{
                             bgcolor: "#1976d2",
@@ -336,14 +341,14 @@ function AboutTwo() {
                         }}
                     />
                     <Typography
-                        variant="h3"
+                        variant="h4"
                         fontWeight="bold"
                         gutterBottom
                         sx={{ color: "#1976d2" }}
                     >
                         What Drives Us
                     </Typography>
-                    <Typography variant="h6" color="text.secondary">
+                    <Typography variant="subtitle1" color="text.secondary">
                         The principles that guide our oceanfront hospitality
                     </Typography>
                 </Box>
@@ -372,14 +377,17 @@ function AboutTwo() {
                                         {value.icon}
                                     </Box>
                                     <Typography
-                                        variant="h5"
+                                        variant="h6"
                                         fontWeight="bold"
                                         gutterBottom
                                         color="#1976d2"
                                     >
                                         {value.title}
                                     </Typography>
-                                    <Typography color="text.secondary">
+                                    <Typography
+                                        variant="body2"
+                                        color="text.secondary"
+                                    >
                                         {value.desc}
                                     </Typography>
                                 </CardContent>
@@ -400,14 +408,14 @@ function AboutTwo() {
                 <Container maxWidth="lg">
                     <Box sx={{ textAlign: "center", mb: 6 }}>
                         <Typography
-                            variant="h3"
+                            variant="h4"
                             fontWeight="bold"
                             gutterBottom
                             sx={{ color: "#1976d2" }}
                         >
                             Resort Amenities
                         </Typography>
-                        <Typography variant="h6" color="text.secondary">
+                        <Typography variant="subtitle1" color="text.secondary">
                             Everything you need for a perfect beach vacation
                         </Typography>
                     </Box>
@@ -450,7 +458,10 @@ function AboutTwo() {
                                     >
                                         {service.title}
                                     </Typography>
-                                    <Typography variant="body2">
+                                    <Typography
+                                        variant="body2"
+                                        color="text.secondary"
+                                    >
                                         {service.desc}
                                     </Typography>
                                 </Paper>
@@ -474,6 +485,7 @@ function AboutTwo() {
                             Our Performance
                         </Typography>
                         <Typography
+                            variant="body2"
                             color="text.secondary"
                             paragraph
                             sx={{ mb: 4 }}
@@ -529,7 +541,7 @@ function AboutTwo() {
                         </Typography>
                         <Typography
                             color="text.secondary"
-                            paragraph
+                            variant="body2"
                             sx={{ mb: 4 }}
                         >
                             Honored for excellence in hospitality
@@ -583,14 +595,14 @@ function AboutTwo() {
                 <Container maxWidth="lg">
                     <Box sx={{ textAlign: "center", mb: 6 }}>
                         <Typography
-                            variant="h3"
+                            variant="h4"
                             fontWeight="bold"
                             gutterBottom
                             sx={{ color: "#1976d2" }}
                         >
                             Our Milestones
                         </Typography>
-                        <Typography variant="h6" color="text.secondary">
+                        <Typography variant="subtitle1" color="text.secondary">
                             Two decades of beachfront excellence
                         </Typography>
                     </Box>
@@ -628,6 +640,11 @@ function AboutTwo() {
                                         height: 50,
                                         mr: { xs: 0, md: 3 },
                                         mb: { xs: 2, md: 0 },
+                                        display: {
+                                            xs: "none",
+                                            sm: "none",
+                                            md: "flex",
+                                        },
                                     }}
                                 >
                                     <Waves />
@@ -636,7 +653,10 @@ function AboutTwo() {
                                     elevation={3}
                                     sx={{ flexGrow: 1, p: 3, width: "100%" }}
                                 >
-                                    <Typography variant="h6" fontWeight="bold">
+                                    <Typography
+                                        variant="subtitle1"
+                                        fontWeight="bold"
+                                    >
                                         {milestone.event}
                                     </Typography>
                                 </Paper>
@@ -650,14 +670,14 @@ function AboutTwo() {
             <Container maxWidth="lg" sx={{ py: 8 }}>
                 <Box sx={{ textAlign: "center", mb: 6 }}>
                     <Typography
-                        variant="h3"
+                        variant="h4"
                         fontWeight="bold"
                         gutterBottom
                         sx={{ color: "#1976d2" }}
                     >
                         Resort Features
                     </Typography>
-                    <Typography variant="h6" color="text.secondary">
+                    <Typography variant="subtitle1" color="text.secondary">
                         World-class facilities at your fingertips
                     </Typography>
                 </Box>
@@ -665,7 +685,7 @@ function AboutTwo() {
                     {features.map((feature, index) => (
                         <Grid item size={{ xs: 6, sm: 4, md: 3 }} key={index}>
                             <Chip
-                                icon={<BeachAccess />}
+                                icon={<BeachAccess color="info" />}
                                 label={feature}
                                 sx={{
                                     width: "100%",
@@ -696,7 +716,7 @@ function AboutTwo() {
                 <Container maxWidth="lg">
                     <Box sx={{ textAlign: "center", mb: 6 }}>
                         <Chip
-                            icon={<People />}
+                            icon={<People color="white" />}
                             label="MEET THE TEAM"
                             sx={{
                                 bgcolor: "#1976d2",
@@ -705,17 +725,18 @@ function AboutTwo() {
                                 fontWeight: "bold",
                                 fontSize: "1rem",
                                 py: 2.5,
+                                fontFamily: "Inter",
                             }}
                         />
                         <Typography
-                            variant="h3"
+                            variant="h4"
                             fontWeight="bold"
                             gutterBottom
                             sx={{ color: "#1976d2" }}
                         >
                             Our Leadership
                         </Typography>
-                        <Typography variant="h6" color="text.secondary">
+                        <Typography variant="subtitle1" color="text.secondary">
                             Dedicated professionals creating memorable
                             experiences
                         </Typography>
@@ -739,7 +760,7 @@ function AboutTwo() {
                                 >
                                     <CardMedia
                                         component="img"
-                                        height="300"
+                                        sx={{ height: 300 }}
                                         image={member.image}
                                         alt={member.name}
                                     />
@@ -755,12 +776,11 @@ function AboutTwo() {
                                             variant="subtitle2"
                                             color="#1976d2"
                                             fontWeight="bold"
-                                            gutterBottom
                                         >
                                             {member.position}
                                         </Typography>
                                         <Typography
-                                            variant="body2"
+                                            variant="caption"
                                             color="text.secondary"
                                         >
                                             {member.description}
@@ -784,10 +804,20 @@ function AboutTwo() {
                 }}
             >
                 <Container maxWidth="md">
-                    <Typography variant="h3" fontWeight="bold" gutterBottom>
+                    <Typography
+                        variant="h4"
+                        fontFamily={"Inter"}
+                        fontWeight="bold"
+                        gutterBottom
+                    >
                         Experience Paradise Today
                     </Typography>
-                    <Typography variant="h6" paragraph sx={{ mb: 4 }}>
+                    <Typography
+                        variant="subtitle2"
+                        fontFamily={"Inter"}
+                        paragraph
+                        sx={{ mb: 4 }}
+                    >
                         Join over 100,000 guests who have discovered the magic
                         of Seaside Paradise Resort
                     </Typography>
@@ -800,36 +830,36 @@ function AboutTwo() {
                         }}
                     >
                         <Chip
-                            icon={<Star />}
+                            icon={<Star color="white" />}
                             label="5-Star Rated"
                             sx={{
                                 bgcolor: "white",
                                 color: "#1976d2",
                                 fontWeight: "bold",
                                 py: 2.5,
-                                fontSize: "1rem",
+                                fontSize: "0.8rem",
                             }}
                         />
                         <Chip
-                            icon={<BeachAccess />}
+                            icon={<BeachAccess color="white" />}
                             label="Private Beach"
                             sx={{
                                 bgcolor: "white",
                                 color: "#1976d2",
                                 fontWeight: "bold",
                                 py: 2.5,
-                                fontSize: "1rem",
+                                fontSize: "0.8rem",
                             }}
                         />
                         <Chip
-                            icon={<VerifiedUser />}
+                            icon={<VerifiedUser color="white" />}
                             label="Safety Certified"
                             sx={{
                                 bgcolor: "white",
                                 color: "#1976d2",
                                 fontWeight: "bold",
                                 py: 2.5,
-                                fontSize: "1rem",
+                                fontSize: "0.8rem",
                             }}
                         />
                     </Box>

@@ -165,12 +165,12 @@ function AboutThree() {
                         variant="h2"
                         fontWeight="bold"
                         gutterBottom
-                        sx={{ fontSize: { xs: "2.5rem", md: "3.5rem" } }}
+                        sx={{ fontSize: { xs: "2rem", md: "3rem" } }}
                     >
                         About Mountain Haven
                     </Typography>
                     <Typography
-                        variant="h6"
+                        variant="subtitle2"
                         sx={{ maxWidth: 700, mx: "auto", lineHeight: 1.8 }}
                     >
                         A sanctuary where adventure meets tranquility, nestled
@@ -190,10 +190,15 @@ function AboutThree() {
                                     fontWeight="bold"
                                     color="#4caf50"
                                     gutterBottom
+                                    fontSize={{ xs: "2rem", sm: "3rem" }}
                                 >
                                     {stat.number}
                                 </Typography>
-                                <Typography variant="h6" color="text.secondary">
+                                <Typography
+                                    variant="h6"
+                                    fontSize={{ xs: "1rem", sm: "1.1rem" }}
+                                    color="text.secondary"
+                                >
                                     {stat.label}
                                 </Typography>
                             </Box>
@@ -224,7 +229,7 @@ function AboutThree() {
                                 Our Journey
                             </Typography>
                             <Typography
-                                variant="body1"
+                                variant="body2"
                                 color="text.secondary"
                                 paragraph
                                 sx={{ lineHeight: 1.8 }}
@@ -237,7 +242,7 @@ function AboutThree() {
                                 cabin into a premier mountain retreat.
                             </Typography>
                             <Typography
-                                variant="body1"
+                                variant="body2"
                                 color="text.secondary"
                                 paragraph
                                 sx={{ lineHeight: 1.8 }}
@@ -249,7 +254,7 @@ function AboutThree() {
                                 beauty that surrounds us for future generations.
                             </Typography>
                             <Typography
-                                variant="body1"
+                                variant="body2"
                                 color="text.secondary"
                                 sx={{ lineHeight: 1.8 }}
                             >
@@ -287,14 +292,14 @@ function AboutThree() {
                         }}
                     />
                     <Typography
-                        variant="h4"
+                        variant="h5"
                         fontWeight="bold"
                         gutterBottom
                         sx={{ color: "#2e7d32" }}
                     >
                         What We Stand For
                     </Typography>
-                    <Typography variant="h6" color="text.secondary">
+                    <Typography variant="subtitle2" color="text.secondary">
                         The principles that guide everything we do
                     </Typography>
                 </Box>
@@ -323,13 +328,16 @@ function AboutThree() {
                                         {value.icon}
                                     </Box>
                                     <Typography
-                                        variant="h5"
+                                        variant="h6"
                                         fontWeight="bold"
                                         gutterBottom
                                     >
                                         {value.title}
                                     </Typography>
-                                    <Typography color="text.secondary">
+                                    <Typography
+                                        variant="subtitle2"
+                                        color="text.secondary"
+                                    >
                                         {value.desc}
                                     </Typography>
                                 </CardContent>
@@ -351,7 +359,7 @@ function AboutThree() {
                         >
                             Our Services
                         </Typography>
-                        <Typography variant="h6" color="text.secondary">
+                        <Typography variant="subtitle2" color="text.secondary">
                             Everything you need for an unforgettable mountain
                             experience
                         </Typography>
@@ -388,13 +396,16 @@ function AboutThree() {
                                             {service.icon}
                                         </Box>
                                         <Typography
-                                            variant="h6"
+                                            variant="subtitle1"
                                             fontWeight="bold"
                                             gutterBottom
                                         >
                                             {service.title}
                                         </Typography>
-                                        <Typography variant="body2">
+                                        <Typography
+                                            variant="body2"
+                                            fontSize={"0.8rem"}
+                                        >
                                             {service.desc}
                                         </Typography>
                                     </CardContent>
@@ -419,6 +430,7 @@ function AboutThree() {
                             Our Excellence
                         </Typography>
                         <Typography
+                            variant="subtitle2"
                             color="text.secondary"
                             paragraph
                             sx={{ mb: 4 }}
@@ -434,7 +446,10 @@ function AboutThree() {
                                         mb: 1,
                                     }}
                                 >
-                                    <Typography fontWeight="bold">
+                                    <Typography
+                                        fontWeight="bold"
+                                        variant="subtitle2"
+                                    >
                                         {achievement.skill}
                                     </Typography>
                                     <Typography
@@ -464,7 +479,7 @@ function AboutThree() {
                     {/* Certifications */}
                     <Grid item size={{ xs: 12, md: 6 }}>
                         <Typography
-                            variant="h4"
+                            variant="h5"
                             fontWeight="bold"
                             gutterBottom
                             sx={{ color: "#2e7d32" }}
@@ -474,6 +489,7 @@ function AboutThree() {
                         <Typography
                             color="text.secondary"
                             paragraph
+                            variant="body2"
                             sx={{ mb: 4 }}
                         >
                             Recognized for excellence and sustainability
@@ -504,7 +520,7 @@ function AboutThree() {
                                             {cert.icon}
                                         </Box>
                                         <Typography
-                                            variant="subtitle1"
+                                            variant="subtitle2"
                                             fontWeight="bold"
                                         >
                                             {cert.label}
@@ -529,7 +545,7 @@ function AboutThree() {
                         >
                             Our Journey
                         </Typography>
-                        <Typography variant="h6" color="text.secondary">
+                        <Typography variant="subtitle2" color="text.secondary">
                             Key milestones in our story
                         </Typography>
                     </Box>
@@ -554,7 +570,7 @@ function AboutThree() {
                                     }}
                                 >
                                     <Typography
-                                        variant="h5"
+                                        variant="h6"
                                         fontWeight="bold"
                                         color="#4caf50"
                                     >
@@ -567,13 +583,20 @@ function AboutThree() {
                                         width: 50,
                                         height: 50,
                                         mr: 3,
-                                        display: { xs: "none", md: "flex" },
+                                        display: {
+                                            xs: "none",
+                                            sm: "none",
+                                            md: "flex",
+                                        },
                                     }}
                                 >
                                     <Star />
                                 </Avatar>
                                 <Card sx={{ flexGrow: 1, p: 2, boxShadow: 0 }}>
-                                    <Typography variant="h6" fontWeight="bold">
+                                    <Typography
+                                        variant="subtitle1"
+                                        fontWeight="bold"
+                                    >
                                         {milestone.event}
                                     </Typography>
                                 </Card>
@@ -595,7 +618,7 @@ function AboutThree() {
                         }}
                     />
                     <Typography
-                        variant="h4"
+                        variant="h5"
                         fontWeight="bold"
                         gutterBottom
                         sx={{ color: "#2e7d32" }}
@@ -637,7 +660,6 @@ function AboutThree() {
                                         variant="subtitle2"
                                         color="#4caf50"
                                         fontWeight="bold"
-                                        gutterBottom
                                     >
                                         {member.position}
                                     </Typography>
@@ -665,10 +687,10 @@ function AboutThree() {
                 }}
             >
                 <Container maxWidth="md">
-                    <Typography variant="h4" fontWeight="bold" gutterBottom>
+                    <Typography variant="h5" fontWeight="bold" gutterBottom>
                         Ready for Your Mountain Adventure?
                     </Typography>
-                    <Typography variant="subtitle1" sx={{ mb: 4 }}>
+                    <Typography variant="body2" sx={{ mb: 4 }}>
                         Join thousands of adventurers who have discovered the
                         magic of Mountain Haven Lodge
                     </Typography>
@@ -681,30 +703,33 @@ function AboutThree() {
                         }}
                     >
                         <Chip
-                            icon={<Groups />}
+                            icon={<Groups color="green" />}
                             label="100% Eco-Friendly"
                             sx={{
                                 bgcolor: "white",
                                 color: "#2e7d32",
                                 fontWeight: "bold",
+                                fontSize: "0.7rem",
                             }}
                         />
                         <Chip
-                            icon={<Star />}
+                            icon={<Star color="green" />}
                             label="5-Star Rated"
                             sx={{
                                 bgcolor: "white",
                                 color: "#2e7d32",
                                 fontWeight: "bold",
+                                fontSize: "0.7rem",
                             }}
                         />
                         <Chip
-                            icon={<VerifiedUser />}
+                            icon={<VerifiedUser color="green" />}
                             label="Safety Certified"
                             sx={{
                                 bgcolor: "white",
                                 color: "#2e7d32",
                                 fontWeight: "bold",
+                                fontSize: "0.7rem",
                             }}
                         />
                     </Box>

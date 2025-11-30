@@ -23,6 +23,7 @@ import {
     Email,
     LocationOn,
 } from "@mui/icons-material";
+import { router } from "@inertiajs/react";
 
 function HomeThree() {
     const highlights = [
@@ -173,7 +174,7 @@ function HomeThree() {
                             Mountain Haven Lodge
                         </Typography>
                         <Typography
-                            variant="h6"
+                            variant="subtitle2"
                             sx={{ mb: 4, lineHeight: 1.6 }}
                         >
                             Reconnect with nature in our sustainable mountain
@@ -220,7 +221,7 @@ function HomeThree() {
             {/* Highlights Section */}
             <Container maxWidth="lg" sx={{ py: 10 }}>
                 <Typography
-                    variant="h4"
+                    variant="h5"
                     fontWeight="bold"
                     textAlign="center"
                     gutterBottom
@@ -229,7 +230,7 @@ function HomeThree() {
                     Why Choose Mountain Haven
                 </Typography>
                 <Typography
-                    variant="body1"
+                    variant="body2"
                     textAlign="center"
                     color="text.secondary"
                     sx={{ mb: 8 }}
@@ -251,14 +252,18 @@ function HomeThree() {
                                     {highlight.icon}
                                 </Box>
                                 <Typography
-                                    variant="h6"
+                                    variant="subtitle1"
                                     gutterBottom
                                     fontWeight="bold"
                                     fontFamily={"Inter"}
                                 >
                                     {highlight.title}
                                 </Typography>
-                                <Typography color="text.secondary">
+                                <Typography
+                                    variant="body2"
+                                    color="text.secondary"
+                                    fontFamily={"Inter"}
+                                >
                                     {highlight.desc}
                                 </Typography>
                             </Box>
@@ -271,7 +276,7 @@ function HomeThree() {
             <Box id="packages" sx={{ bgcolor: "#f5f5f5", py: 10 }}>
                 <Container maxWidth="lg">
                     <Typography
-                        variant="h4"
+                        variant="h5"
                         fontWeight="bold"
                         textAlign="center"
                         gutterBottom
@@ -279,7 +284,7 @@ function HomeThree() {
                         Vacation Packages
                     </Typography>
                     <Typography
-                        variant="body1"
+                        variant="body2"
                         textAlign="center"
                         color="text.secondary"
                         sx={{ mb: 8 }}
@@ -370,6 +375,19 @@ function HomeThree() {
                                                 },
                                                 fontSize: "0.8rem",
                                             }}
+                                            onClick={() =>
+                                                router.visit(
+                                                    route(
+                                                        "packageDetailsThree",
+                                                        {
+                                                            package:
+                                                                JSON.stringify(
+                                                                    pkg
+                                                                ),
+                                                        }
+                                                    )
+                                                )
+                                            }
                                         >
                                             Select Package
                                         </Button>

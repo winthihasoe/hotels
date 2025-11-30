@@ -25,6 +25,7 @@ function NavbarTwo() {
 
     const menuItems = [
         { label: "Home", link: "homeTwo", type: "route" },
+        { label: "Rooms", link: "roomsTwo", type: "route" },
         { label: "About", link: "aboutTwo", type: "route" },
         { label: "Services", link: "services", type: "section" },
         { label: "Gallery", link: "gallery", type: "section" },

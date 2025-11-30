@@ -21,6 +21,7 @@ import {
     StarRate,
     ArrowForward,
 } from "@mui/icons-material";
+import { router } from "@inertiajs/react";
 
 function HomeTwo() {
     const services = [
@@ -125,7 +126,7 @@ function HomeTwo() {
                         >
                             Seaside Paradise Resort
                         </Typography>
-                        <Typography variant="h5" sx={{ mb: 4 }}>
+                        <Typography variant="h6" sx={{ mb: 4 }}>
                             Where luxury meets the ocean
                         </Typography>
                         <Box
@@ -140,9 +141,13 @@ function HomeTwo() {
                                 size="large"
                                 sx={{
                                     bgcolor: "white",
+                                    fontFamily: "Inter",
                                     color: "#1976d2",
                                     px: 4,
                                     "&:hover": { bgcolor: "#f0f0f0" },
+                                }}
+                                onClick={() => {
+                                    router.visit(route("roomsTwo"));
                                 }}
                             >
                                 Explore Rooms
@@ -154,10 +159,14 @@ function HomeTwo() {
                                     borderColor: "white",
                                     color: "white",
                                     px: 4,
+                                    fontFamily: "Inter",
                                     "&:hover": {
                                         borderColor: "white",
                                         bgcolor: "rgba(255,255,255,0.1)",
                                     },
+                                }}
+                                onClick={() => {
+                                    router.visit(route("roomsTwo"));
                                 }}
                             >
                                 Special Offers
@@ -171,11 +180,11 @@ function HomeTwo() {
             <Container maxWidth="lg" sx={{ py: 10 }}>
                 <Grid container spacing={6} alignItems="center">
                     <Grid item size={{ xs: 12, md: 6 }}>
-                        <Typography variant="h3" fontWeight="bold" gutterBottom>
+                        <Typography variant="h4" fontWeight="bold" gutterBottom>
                             Your Dream Vacation Awaits
                         </Typography>
                         <Typography
-                            variant="body1"
+                            variant="body2"
                             paragraph
                             color="text.secondary"
                         >
@@ -186,7 +195,7 @@ function HomeTwo() {
                             experience.
                         </Typography>
                         <Typography
-                            variant="body1"
+                            variant="body2"
                             paragraph
                             color="text.secondary"
                         >
@@ -198,7 +207,14 @@ function HomeTwo() {
                         <Button
                             variant="contained"
                             size="large"
-                            sx={{ mt: 2, bgcolor: "#1976d2" }}
+                            sx={{
+                                mt: 2,
+                                bgcolor: "#1976d2",
+                                fontFamily: "Inter",
+                            }}
+                            onClick={() => {
+                                router.visit(route("aboutTwo"));
+                            }}
                         >
                             Learn More
                         </Button>
@@ -222,7 +238,8 @@ function HomeTwo() {
             <Box id="services" sx={{ bgcolor: "#f8f9fa", py: 10 }}>
                 <Container maxWidth="lg">
                     <Typography
-                        variant="h3"
+                        variant="h4"
+                        fontFamily={"Inter"}
                         textAlign="center"
                         fontWeight="bold"
                         gutterBottom
@@ -230,7 +247,8 @@ function HomeTwo() {
                         Premium Services
                     </Typography>
                     <Typography
-                        variant="body1"
+                        variant="body2"
+                        fontFamily={"Inter"}
                         textAlign="center"
                         color="text.secondary"
                         sx={{ mb: 6 }}
@@ -259,10 +277,18 @@ function HomeTwo() {
                                     <Box sx={{ color: "#1976d2", mb: 2 }}>
                                         {service.icon}
                                     </Box>
-                                    <Typography variant="h6" gutterBottom>
+                                    <Typography
+                                        variant="h6"
+                                        gutterBottom
+                                        fontFamily={"Inter"}
+                                    >
                                         {service.title}
                                     </Typography>
-                                    <Typography color="text.secondary">
+                                    <Typography
+                                        color="text.secondary"
+                                        fontFamily={"Inter"}
+                                        variant="caption"
+                                    >
                                         {service.desc}
                                     </Typography>
                                 </Paper>
@@ -276,7 +302,7 @@ function HomeTwo() {
             <Container id="gallery" maxWidth="lg" sx={{ py: 10 }}>
                 <Box sx={{ textAlign: "center", mb: 6 }}>
                     <Chip
-                        icon={<BeachAccess />}
+                        icon={<BeachAccess color="white" />}
                         label="GALLERY"
                         sx={{
                             bgcolor: "#1976d2",
@@ -287,10 +313,10 @@ function HomeTwo() {
                             py: 2.5,
                         }}
                     />
-                    <Typography variant="h3" fontWeight="bold" gutterBottom>
+                    <Typography variant="h4" fontWeight="bold" gutterBottom>
                         Discover Paradise
                     </Typography>
-                    <Typography variant="h6" color="text.secondary">
+                    <Typography variant="subtitle1" color="text.secondary">
                         Explore the stunning beauty of Seaside Paradise Resort
                     </Typography>
                 </Box>
@@ -379,7 +405,8 @@ function HomeTwo() {
                                 "linear-gradient(135deg, #1976d2 0%, #42a5f5 100%)",
                             px: 5,
                             py: 1.5,
-                            fontSize: "1.1rem",
+                            fontSize: "0.8rem",
+                            fontFamily: "Inter",
                             "&:hover": {
                                 background:
                                     "linear-gradient(135deg, #1565c0 0%, #1976d2 100%)",
@@ -392,9 +419,9 @@ function HomeTwo() {
             </Container>
 
             {/* Testimonials Section */}
-            <Container maxWidth="lg" sx={{ py: 10 }}>
+            <Container id="testimonials" maxWidth="lg" sx={{ py: 10 }}>
                 <Typography
-                    variant="h3"
+                    variant="h4"
                     textAlign="center"
                     fontWeight="bold"
                     gutterBottom
@@ -402,7 +429,7 @@ function HomeTwo() {
                     What Our Guests Say
                 </Typography>
                 <Typography
-                    variant="body1"
+                    variant="body2"
                     textAlign="center"
                     color="text.secondary"
                     sx={{ mb: 6 }}
@@ -431,7 +458,11 @@ function HomeTwo() {
                                         {testimonial.avatar}
                                     </Avatar>
                                     <Box>
-                                        <Typography variant="h6">
+                                        <Typography
+                                            variant="subtitle1"
+                                            fontWeight={"bold"}
+                                            fontFamily={"Inter"}
+                                        >
                                             {testimonial.name}
                                         </Typography>
                                         <Box sx={{ display: "flex" }}>
@@ -449,7 +480,11 @@ function HomeTwo() {
                                         </Box>
                                     </Box>
                                 </Box>
-                                <Typography color="text.secondary">
+                                <Typography
+                                    color="text.secondary"
+                                    fontFamily={"Inter"}
+                                    variant="caption"
+                                >
                                     "{testimonial.review}"
                                 </Typography>
                             </Paper>
@@ -461,10 +496,21 @@ function HomeTwo() {
             {/* Newsletter Section */}
             <Box sx={{ bgcolor: "#1976d2", color: "white", py: 8 }}>
                 <Container maxWidth="md">
-                    <Typography variant="h4" textAlign="center" gutterBottom>
+                    <Typography
+                        variant="h4"
+                        fontFamily={"Inter"}
+                        textAlign="center"
+                        gutterBottom
+                        fontWeight={200}
+                    >
                         Subscribe to Our Newsletter
                     </Typography>
-                    <Typography textAlign="center" sx={{ mb: 4 }}>
+                    <Typography
+                        variant="body2"
+                        fontFamily={"Inter"}
+                        textAlign="center"
+                        sx={{ mb: 4 }}
+                    >
                         Get exclusive offers and updates delivered to your inbox
                     </Typography>
                     <Box
@@ -495,6 +541,7 @@ function HomeTwo() {
                                 px: 4,
                                 "&:hover": { bgcolor: "#f0f0f0" },
                                 whiteSpace: "nowrap",
+                                fontFamily: "Inter",
                             }}
                         >
                             Subscribe

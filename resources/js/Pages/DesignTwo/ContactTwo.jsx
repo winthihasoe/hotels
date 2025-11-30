@@ -148,7 +148,7 @@ function ContactTwo() {
             >
                 <Container>
                     <Chip
-                        icon={<Waves />}
+                        icon={<Waves color="white" />}
                         label="GET IN TOUCH"
                         sx={{
                             bgcolor: "white",
@@ -163,12 +163,12 @@ function ContactTwo() {
                         variant="h2"
                         fontWeight="bold"
                         gutterBottom
-                        sx={{ fontSize: { xs: "2.5rem", md: "3.5rem" } }}
+                        sx={{ fontSize: { xs: "2rem", md: "3rem" } }}
                     >
                         Contact Seaside Paradise
                     </Typography>
                     <Typography
-                        variant="h6"
+                        variant="subtitle2"
                         sx={{ maxWidth: 700, mx: "auto", lineHeight: 1.6 }}
                     >
                         Your dream beach vacation starts with a conversation.
@@ -223,6 +223,7 @@ function ContactTwo() {
                                             bgcolor: `${info.color}20`,
                                             color: info.color,
                                             fontWeight: "bold",
+                                            fontSize: "0.75rem",
                                             mb: 2,
                                         }}
                                     />
@@ -231,7 +232,7 @@ function ContactTwo() {
                                             key={idx}
                                             variant="body2"
                                             color="text.secondary"
-                                            sx={{ mt: 1 }}
+                                            sx={{ mt: 1, fontSize: "0.8rem" }}
                                         >
                                             {detail}
                                         </Typography>
@@ -253,7 +254,7 @@ function ContactTwo() {
             >
                 <Container maxWidth="lg">
                     <Typography
-                        variant="h4"
+                        variant="h5"
                         fontWeight="bold"
                         textAlign="center"
                         gutterBottom
@@ -288,13 +289,16 @@ function ContactTwo() {
                                         {contact.icon}
                                     </Avatar>
                                     <Typography
-                                        variant="h6"
+                                        variant="subtitle1"
                                         fontWeight="bold"
                                         gutterBottom
                                     >
                                         {contact.label}
                                     </Typography>
-                                    <Typography color="text.secondary">
+                                    <Typography
+                                        sx={{ fontSize: "0.75rem" }}
+                                        color="text.secondary"
+                                    >
                                         {contact.value}
                                     </Typography>
                                 </Paper>
@@ -329,11 +333,14 @@ function ContactTwo() {
                                 </Avatar>
                                 <Box>
                                     <Typography
-                                        variant="h4"
+                                        variant="h6"
                                         fontWeight="bold"
-                                        sx={{ color: "#1976d2" }}
+                                        sx={{
+                                            color: "#1976d2",
+                                            fontFamily: "Inter",
+                                        }}
                                     >
-                                        Send Us a Message
+                                        Send Us Message
                                     </Typography>
                                     <Typography
                                         variant="body2"
@@ -443,7 +450,8 @@ function ContactTwo() {
                                                     "linear-gradient(135deg, #1976d2 0%, #42a5f5 100%)",
                                                 color: "white",
                                                 py: 1.5,
-                                                fontSize: "1.1rem",
+                                                fontFamily: "Inter",
+                                                fontSize: "0.9rem",
                                                 "&:hover": {
                                                     background:
                                                         "linear-gradient(135deg, #1565c0 0%, #1976d2 100%)",
@@ -515,6 +523,7 @@ function ContactTwo() {
                                             <Typography
                                                 variant="body2"
                                                 color="text.secondary"
+                                                sx={{ fontSize: "0.75rem" }}
                                             >
                                                 {dept.phone} ext. {dept.ext}
                                             </Typography>
@@ -530,7 +539,10 @@ function ContactTwo() {
                                     fontWeight="bold"
                                     gutterBottom
                                     textAlign="center"
-                                    sx={{ color: "#1976d2" }}
+                                    sx={{
+                                        color: "#1976d2",
+                                        fontFamily: "Inter",
+                                    }}
                                 >
                                     Follow Our Beach Life
                                 </Typography>
@@ -599,6 +611,7 @@ function ContactTwo() {
                                     <Typography
                                         variant="body2"
                                         color="text.secondary"
+                                        sx={{ fontSize: "0.75rem" }}
                                         paragraph
                                     >
                                         Ask about our water sports, beach yoga,
@@ -610,6 +623,8 @@ function ContactTwo() {
                                         sx={{
                                             bgcolor: "#1976d2",
                                             "&:hover": { bgcolor: "#1565c0" },
+                                            fontSize: "0.75rem",
+                                            fontFamily: "Inter",
                                         }}
                                     >
                                         View Activities
@@ -633,10 +648,18 @@ function ContactTwo() {
             >
                 <Container maxWidth="md">
                     <Waves sx={{ fontSize: 60, mb: 2 }} />
-                    <Typography variant="h3" fontWeight="bold" gutterBottom>
+                    <Typography
+                        variant="h5"
+                        fontWeight="bold"
+                        gutterBottom
+                        sx={{ fontFamily: "Inter" }}
+                    >
                         Ready to Experience Paradise?
                     </Typography>
-                    <Typography variant="h6" paragraph sx={{ mb: 4 }}>
+                    <Typography
+                        variant="subtitle2"
+                        sx={{ mb: 4, fontFamily: "Inter" }}
+                    >
                         Our oceanfront concierge team is available 24/7 to
                         assist you
                     </Typography>
@@ -657,10 +680,13 @@ function ContactTwo() {
                                 color: "#1976d2",
                                 px: 4,
                                 py: 1.5,
-                                "&:hover": { bgcolor: "#f5f5f5" },
+                                fontSize: "0.75rem",
+                                "&:hover": {
+                                    bgcolor: "#f5f5f5",
+                                },
                             }}
                         >
-                            Call +1 (555) 234-5678
+                            +1 (555) 234-5678
                         </Button>
                         <Button
                             variant="outlined"
@@ -671,6 +697,7 @@ function ContactTwo() {
                                 color: "white",
                                 px: 4,
                                 py: 1.5,
+                                fontSize: "0.75rem",
                                 "&:hover": {
                                     borderColor: "white",
                                     bgcolor: "rgba(255,255,255,0.1)",

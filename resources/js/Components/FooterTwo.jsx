@@ -32,7 +32,7 @@ function FooterTwo() {
                         <Typography
                             variant="body2"
                             paragraph
-                            sx={{ color: "#b3d9ff" }}
+                            sx={{ color: "#b3d9ff", fontSize: "0.8rem" }}
                         >
                             Your gateway to oceanfront luxury. Experience
                             unforgettable moments where the sea meets
@@ -243,7 +243,10 @@ function FooterTwo() {
                         gap: 2,
                     }}
                 >
-                    <Typography variant="body2" sx={{ color: "#b3d9ff" }}>
+                    <Typography
+                        variant="body2"
+                        sx={{ fontSize: "0.8rem", color: "#b3d9ff" }}
+                    >
                         © 2024 Seaside Paradise Resort. All rights reserved.
                     </Typography>
                     <Box sx={{ display: "flex", gap: 3 }}>
@@ -253,6 +256,7 @@ function FooterTwo() {
                                     key={link}
                                     variant="body2"
                                     sx={{
+                                        fontSize: "0.8rem",
                                         color: "#b3d9ff",
                                         cursor: "pointer",
                                         "&:hover": { color: "white" },

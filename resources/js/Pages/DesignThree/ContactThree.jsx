@@ -124,15 +124,15 @@ function ContactThree() {
                         }}
                     />
                     <Typography
-                        variant="h3"
+                        variant="h4"
                         fontWeight="bold"
                         gutterBottom
-                        sx={{ fontSize: { xs: "2rem", md: "3.5rem" } }}
+                        sx={{ fontSize: { xs: "2rem", md: "3rem" } }}
                     >
                         Contact Mountain Haven
                     </Typography>
                     <Typography
-                        variant="subtitle1"
+                        variant="subtitle2"
                         sx={{ maxWidth: 700, mx: "auto", lineHeight: 1.6 }}
                     >
                         Your adventure begins with a conversation. Let's plan
@@ -180,7 +180,7 @@ function ContactThree() {
                                         color="#4caf50"
                                         fontWeight="bold"
                                         display="block"
-                                        sx={{ mb: 2 }}
+                                        sx={{ mb: 2, fontSize: "0.8rem" }}
                                     >
                                         {info.subtitle}
                                     </Typography>
@@ -189,7 +189,7 @@ function ContactThree() {
                                             key={idx}
                                             variant="body2"
                                             color="text.secondary"
-                                            sx={{ mt: 1 }}
+                                            sx={{ mt: 1, fontSize: "0.7rem" }}
                                         >
                                             {detail}
                                         </Typography>

@@ -39,6 +39,15 @@ class PageController extends Controller
     {
         return Inertia::render('DesignTwo/ContactTwo');
     }
+    public function roomsTwo()
+    {
+        return Inertia::render('DesignTwo/RoomsTwo');
+    }
+    public function roomDetailsTwo(Request $request)
+    {
+        $room = json_decode($request->query('room'), true);
+        return Inertia::render('DesignTwo/RoomDetailsTwo', ['room' => $room]);
+    }
 
     // Design Three Pages
     public function homeThree()
@@ -52,5 +61,10 @@ class PageController extends Controller
     public function contactThree()
     {
         return Inertia::render('DesignThree/ContactThree');
+    }
+    public function packageDetailsThree(Request $request)
+    {
+        $package = json_decode($request->query('package'), true);
+        return Inertia::render('DesignThree/PackageDetailsThree', ['package' => $package]);
     }
 }
