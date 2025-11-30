@@ -20,6 +20,11 @@ class PageController extends Controller
     {
         return Inertia::render('DesignOne/ContactOne');
     }
+    public function roomDetailsOne(Request $request)
+    {
+        $room = json_decode($request->query('room'), true);
+        return Inertia::render('DesignOne/RoomDetailsOne', ['room' => $room]);
+    }
 
     // Design Two Pages
     public function homeTwo()

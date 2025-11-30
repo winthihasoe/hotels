@@ -129,7 +129,10 @@ function NavbarOne() {
                 }}
             >
                 <Toolbar sx={{ justifyContent: "space-between", py: 1 }}>
-                    <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                    <Box
+                        sx={{ display: "flex", alignItems: "center", gap: 1 }}
+                        onClick={() => router.visit(route("homeOne"))}
+                    >
                         <Hotel sx={{ color: "#d4af37", fontSize: 32 }} />
                         <Typography
                             variant="h5"
@@ -198,16 +201,6 @@ function NavbarOne() {
                                     </Button>
                                 )
                             )}
-                            <Button
-                                variant="contained"
-                                sx={{
-                                    bgcolor: "#d4af37",
-                                    color: "white",
-                                    "&:hover": { bgcolor: "#b8941f" },
-                                }}
-                            >
-                                Book Now
-                            </Button>
                         </Box>
                     )}
                 </Toolbar>

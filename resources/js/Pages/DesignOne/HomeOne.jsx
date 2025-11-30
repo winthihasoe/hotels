@@ -20,6 +20,7 @@ import {
     Wifi,
     LocalParking,
 } from "@mui/icons-material";
+import { router } from "@inertiajs/react";
 
 function HomeOne() {
     const features = [
@@ -105,8 +106,9 @@ function HomeOne() {
                             py: 1.5,
                             "&:hover": { bgcolor: "#b8941f" },
                         }}
+                        onClick={() => router.visit(route("contactOne"))}
                     >
-                        Book Now
+                        Contact Us
                     </Button>
                 </Container>
             </Box>
@@ -114,7 +116,7 @@ function HomeOne() {
             {/* Features Section */}
             <Container id="amenities" maxWidth="lg" sx={{ py: 8 }}>
                 <Typography
-                    variant="h3"
+                    variant="h4"
                     textAlign="center"
                     gutterBottom
                     fontWeight="bold"
@@ -162,7 +164,7 @@ function HomeOne() {
             <Box id="rooms" sx={{ bgcolor: "#f5f5f5", py: 8 }}>
                 <Container maxWidth="lg">
                     <Typography
-                        variant="h3"
+                        variant="h4"
                         textAlign="center"
                         gutterBottom
                         fontWeight="bold"
@@ -225,6 +227,15 @@ function HomeOne() {
                                                     color: "white",
                                                 },
                                             }}
+                                            onClick={() =>
+                                                router.visit(
+                                                    route("roomDetailsOne", {
+                                                        room: JSON.stringify(
+                                                            room
+                                                        ),
+                                                    })
+                                                )
+                                            }
                                         >
                                             View Details
                                         </Button>

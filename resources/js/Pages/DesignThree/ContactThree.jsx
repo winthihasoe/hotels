@@ -124,15 +124,15 @@ function ContactThree() {
                         }}
                     />
                     <Typography
-                        variant="h2"
+                        variant="h3"
                         fontWeight="bold"
                         gutterBottom
-                        sx={{ fontSize: { xs: "2.5rem", md: "3.5rem" } }}
+                        sx={{ fontSize: { xs: "2rem", md: "3.5rem" } }}
                     >
                         Contact Mountain Haven
                     </Typography>
                     <Typography
-                        variant="h6"
+                        variant="subtitle1"
                         sx={{ maxWidth: 700, mx: "auto", lineHeight: 1.6 }}
                     >
                         Your adventure begins with a conversation. Let's plan
@@ -207,9 +207,12 @@ function ContactThree() {
                     <Grid container spacing={5}>
                         {/* Contact Form */}
                         <Grid item size={{ xs: 12, md: 7 }}>
-                            <Paper elevation={3} sx={{ p: 4 }}>
+                            <Paper
+                                elevation={3}
+                                sx={{ px: { xs: 2, md: 4 }, py: 4 }}
+                            >
                                 <Typography
-                                    variant="h4"
+                                    variant="h5"
                                     fontWeight="bold"
                                     gutterBottom
                                     sx={{ color: "#2e7d32" }}
@@ -218,7 +221,7 @@ function ContactThree() {
                                 </Typography>
                                 <Typography
                                     color="text.secondary"
-                                    paragraph
+                                    variant="body2"
                                     sx={{ mb: 4 }}
                                 >
                                     Planning your mountain adventure? Fill out
@@ -310,7 +313,7 @@ function ContactThree() {
                                                     bgcolor: "#4caf50",
                                                     color: "white",
                                                     py: 1.5,
-                                                    fontSize: "1.1rem",
+                                                    fontSize: "0.8rem",
                                                     "&:hover": {
                                                         bgcolor: "#45a049",
                                                     },
@@ -464,13 +467,13 @@ function ContactThree() {
                             }}
                         >
                             <Typography
-                                variant="h4"
+                                variant="h5"
                                 fontWeight="bold"
                                 gutterBottom
                             >
                                 Need Immediate Help?
                             </Typography>
-                            <Typography variant="h6" paragraph>
+                            <Typography variant="subtitle1">
                                 Our 24/7 adventure concierge is always ready to
                                 assist
                             </Typography>
@@ -481,6 +484,7 @@ function ContactThree() {
                                 sx={{
                                     bgcolor: "white",
                                     color: "#2e7d32",
+                                    fontSize: "0.8rem",
                                     px: 4,
                                     py: 1.5,
                                     mt: 2,

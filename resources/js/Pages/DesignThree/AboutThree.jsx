@@ -186,7 +186,7 @@ function AboutThree() {
                         <Grid item size={{ xs: 6, md: 3 }} key={index}>
                             <Box sx={{ textAlign: "center" }}>
                                 <Typography
-                                    variant="h3"
+                                    variant="h4"
                                     fontWeight="bold"
                                     color="#4caf50"
                                     gutterBottom
@@ -216,7 +216,7 @@ function AboutThree() {
                                 }}
                             />
                             <Typography
-                                variant="h3"
+                                variant="h4"
                                 fontWeight="bold"
                                 gutterBottom
                                 sx={{ color: "#2e7d32" }}
@@ -287,7 +287,7 @@ function AboutThree() {
                         }}
                     />
                     <Typography
-                        variant="h3"
+                        variant="h4"
                         fontWeight="bold"
                         gutterBottom
                         sx={{ color: "#2e7d32" }}
@@ -344,7 +344,7 @@ function AboutThree() {
                 <Container maxWidth="lg">
                     <Box sx={{ textAlign: "center", mb: 6 }}>
                         <Typography
-                            variant="h3"
+                            variant="h4"
                             fontWeight="bold"
                             gutterBottom
                             sx={{ color: "#2e7d32" }}
@@ -485,6 +485,7 @@ function AboutThree() {
                                         sx={{
                                             textAlign: "center",
                                             p: 3,
+                                            boxShadow: 0,
                                             transition: "all 0.3s",
                                             "&:hover": {
                                                 transform: "scale(1.05)",
@@ -521,7 +522,7 @@ function AboutThree() {
                 <Container maxWidth="lg">
                     <Box sx={{ textAlign: "center", mb: 6 }}>
                         <Typography
-                            variant="h3"
+                            variant="h4"
                             fontWeight="bold"
                             gutterBottom
                             sx={{ color: "#2e7d32" }}
@@ -538,6 +539,8 @@ function AboutThree() {
                                 key={index}
                                 sx={{
                                     display: "flex",
+                                    flexWrap: "wrap",
+                                    rowGap: 2,
                                     alignItems: "center",
                                     mb: 4,
                                     position: "relative",
@@ -547,7 +550,7 @@ function AboutThree() {
                                     sx={{
                                         minWidth: 100,
                                         mr: 4,
-                                        textAlign: "right",
+                                        textAlign: { xs: "left", md: "right" },
                                     }}
                                 >
                                     <Typography
@@ -564,11 +567,12 @@ function AboutThree() {
                                         width: 50,
                                         height: 50,
                                         mr: 3,
+                                        display: { xs: "none", md: "flex" },
                                     }}
                                 >
                                     <Star />
                                 </Avatar>
-                                <Card sx={{ flexGrow: 1, p: 2 }}>
+                                <Card sx={{ flexGrow: 1, p: 2, boxShadow: 0 }}>
                                     <Typography variant="h6" fontWeight="bold">
                                         {milestone.event}
                                     </Typography>
@@ -591,7 +595,7 @@ function AboutThree() {
                         }}
                     />
                     <Typography
-                        variant="h3"
+                        variant="h4"
                         fontWeight="bold"
                         gutterBottom
                         sx={{ color: "#2e7d32" }}
@@ -661,10 +665,10 @@ function AboutThree() {
                 }}
             >
                 <Container maxWidth="md">
-                    <Typography variant="h3" fontWeight="bold" gutterBottom>
+                    <Typography variant="h4" fontWeight="bold" gutterBottom>
                         Ready for Your Mountain Adventure?
                     </Typography>
-                    <Typography variant="h6" paragraph sx={{ mb: 4 }}>
+                    <Typography variant="subtitle1" sx={{ mb: 4 }}>
                         Join thousands of adventurers who have discovered the
                         magic of Mountain Haven Lodge
                     </Typography>

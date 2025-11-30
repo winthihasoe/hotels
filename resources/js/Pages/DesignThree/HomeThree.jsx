@@ -179,7 +179,7 @@ function HomeThree() {
                             Reconnect with nature in our sustainable mountain
                             retreat
                         </Typography>
-                        <Box sx={{ display: "flex", gap: 2 }}>
+                        <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2 }}>
                             <Button
                                 variant="contained"
                                 size="large"
@@ -188,7 +188,7 @@ function HomeThree() {
                                     bgcolor: "#4caf50",
                                     px: 4,
                                     py: 1.5,
-                                    fontSize: "1.1rem",
+                                    fontSize: "0.9rem",
                                     "&:hover": { bgcolor: "#45a049" },
                                 }}
                             >
@@ -202,6 +202,7 @@ function HomeThree() {
                                     color: "white",
                                     px: 4,
                                     borderWidth: 2,
+                                    fontSize: "0.9rem",
                                     "&:hover": {
                                         borderColor: "white",
                                         borderWidth: 2,
@@ -219,7 +220,7 @@ function HomeThree() {
             {/* Highlights Section */}
             <Container maxWidth="lg" sx={{ py: 10 }}>
                 <Typography
-                    variant="h3"
+                    variant="h4"
                     fontWeight="bold"
                     textAlign="center"
                     gutterBottom
@@ -270,7 +271,7 @@ function HomeThree() {
             <Box id="packages" sx={{ bgcolor: "#f5f5f5", py: 10 }}>
                 <Container maxWidth="lg">
                     <Typography
-                        variant="h3"
+                        variant="h4"
                         fontWeight="bold"
                         textAlign="center"
                         gutterBottom
@@ -324,8 +325,7 @@ function HomeThree() {
                                     />
                                     <CardContent sx={{ flexGrow: 1 }}>
                                         <Typography
-                                            variant="h5"
-                                            gutterBottom
+                                            variant="h6"
                                             fontWeight="bold"
                                         >
                                             {pkg.title}
@@ -333,6 +333,7 @@ function HomeThree() {
                                         <Typography
                                             color="text.secondary"
                                             gutterBottom
+                                            variant="caption"
                                             sx={{ mb: 2 }}
                                         >
                                             {pkg.duration}
@@ -367,6 +368,7 @@ function HomeThree() {
                                                 "&:hover": {
                                                     bgcolor: "#45a049",
                                                 },
+                                                fontSize: "0.8rem",
                                             }}
                                         >
                                             Select Package
@@ -382,7 +384,7 @@ function HomeThree() {
             {/* Experiences Section */}
             <Container id="experiences" maxWidth="lg" sx={{ py: 10 }}>
                 <Typography
-                    variant="h3"
+                    variant="h4"
                     fontWeight="bold"
                     textAlign="center"
                     gutterBottom
@@ -471,7 +473,7 @@ function HomeThree() {
                                 py: 2.5,
                             }}
                         />
-                        <Typography variant="h3" fontWeight="bold" gutterBottom>
+                        <Typography variant="h4" fontWeight="bold" gutterBottom>
                             Capture the Moments
                         </Typography>
                         <Typography variant="h6" color="text.secondary">
@@ -567,7 +569,7 @@ function HomeThree() {
                                 bgcolor: "#4caf50",
                                 px: 5,
                                 py: 1.5,
-                                fontSize: "1.1rem",
+                                fontSize: "0.8rem",
                                 "&:hover": { bgcolor: "#45a049" },
                             }}
                         >
@@ -589,7 +591,7 @@ function HomeThree() {
                     <Grid container spacing={4} alignItems="center">
                         <Grid item size={{ xs: 12, md: 6 }}>
                             <Typography
-                                variant="h3"
+                                variant="h4"
                                 fontWeight="bold"
                                 gutterBottom
                             >
@@ -651,7 +653,7 @@ function HomeThree() {
                                     bgcolor: "white",
                                     color: "#2e7d32",
                                     py: 2,
-                                    fontSize: "1.2rem",
+                                    fontSize: "0.8rem",
                                     "&:hover": { bgcolor: "#f0f0f0" },
                                 }}
                             >

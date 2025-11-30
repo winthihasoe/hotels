@@ -131,7 +131,10 @@ function NavbarTwo() {
                 }}
             >
                 <Toolbar sx={{ justifyContent: "space-between", py: 1 }}>
-                    <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                    <Box
+                        sx={{ display: "flex", alignItems: "center", gap: 1 }}
+                        onClick={() => router.visit(route("homeTwo"))}
+                    >
                         <Waves sx={{ fontSize: 36 }} />
                         <Box>
                             <Typography variant="h5" fontWeight="bold">

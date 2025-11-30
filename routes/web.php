@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/starter', [PageController::class, 'homeOne'])->name('homeOne');
 Route::get('/starter/about-us', [PageController::class, 'aboutOne'])->name('aboutOne');
 Route::get('/starter/contact-us', [PageController::class, 'contactOne'])->name('contactOne');
-
+Route::get('/starter/room-details', [PageController::class, 'roomDetailsOne'])->name('roomDetailsOne');
 // Design Two Routes
 Route::get('/business', [PageController::class, 'homeTwo'])->name('homeTwo');
 Route::get('/business/about-us', [PageController::class, 'aboutTwo'])->name('aboutTwo');

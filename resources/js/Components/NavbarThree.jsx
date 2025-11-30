@@ -148,6 +148,7 @@ function NavbarThree() {
                                 alignItems: "center",
                                 gap: 1.5,
                             }}
+                            onClick={() => router.visit(route("homeThree"))}
                         >
                             <Terrain sx={{ fontSize: 40, color: "#4caf50" }} />
                             <Box>
