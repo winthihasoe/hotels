@@ -132,11 +132,11 @@ function AboutOne() {
                         variant="h2"
                         fontWeight="bold"
                         gutterBottom
-                        sx={{ fontSize: { xs: "2.5rem", md: "3.5rem" } }}
+                        sx={{ fontSize: { xs: "2rem", md: "3rem" } }}
                     >
                         About Grand Royale Hotel
                     </Typography>
-                    <Typography variant="h5" sx={{ maxWidth: 700 }}>
+                    <Typography variant="subtitle1" sx={{ maxWidth: 700 }}>
                         A legacy of luxury, service, and unforgettable
                         experiences since 1999
                     </Typography>
@@ -151,13 +151,18 @@ function AboutOne() {
                             <Box textAlign="center">
                                 <Typography
                                     variant="h2"
+                                    fontSize={{ xs: "2rem", sm: "3rem" }}
                                     fontWeight="bold"
                                     color="#d4af37"
                                     gutterBottom
                                 >
                                     {stat.number}
                                 </Typography>
-                                <Typography variant="h6" color="text.secondary">
+                                <Typography
+                                    variant="h6"
+                                    fontSize={{ xs: "1rem", sm: "1.1rem" }}
+                                    color="text.secondary"
+                                >
                                     {stat.label}
                                 </Typography>
                             </Box>
@@ -190,14 +195,14 @@ function AboutOne() {
                                 Our Story
                             </Typography>
                             <Typography
-                                variant="h3"
+                                variant="h5"
                                 fontWeight="bold"
                                 gutterBottom
                             >
                                 A Legacy of Excellence
                             </Typography>
                             <Typography
-                                variant="body1"
+                                variant="body2"
                                 paragraph
                                 color="text.secondary"
                             >
@@ -208,7 +213,7 @@ function AboutOne() {
                                 world-renowned destination.
                             </Typography>
                             <Typography
-                                variant="body1"
+                                variant="body2"
                                 paragraph
                                 color="text.secondary"
                             >
@@ -218,7 +223,7 @@ function AboutOne() {
                                 loyalty of guests from around the globe.
                             </Typography>
                             <Typography
-                                variant="body1"
+                                variant="body2"
                                 paragraph
                                 color="text.secondary"
                             >
@@ -236,6 +241,7 @@ function AboutOne() {
             <Container maxWidth="lg" sx={{ py: 10 }}>
                 <Typography
                     variant="h3"
+                    sx={{ fontSize: { xs: "2rem", md: "3rem" } }}
                     textAlign="center"
                     fontWeight="bold"
                     gutterBottom
@@ -243,7 +249,7 @@ function AboutOne() {
                     Our Core Values
                 </Typography>
                 <Typography
-                    variant="body1"
+                    variant="body2"
                     textAlign="center"
                     color="text.secondary"
                     sx={{ mb: 6 }}
@@ -271,13 +277,16 @@ function AboutOne() {
                                         {value.icon}
                                     </Box>
                                     <Typography
-                                        variant="h5"
+                                        variant="h6"
                                         gutterBottom
                                         fontWeight="bold"
                                     >
                                         {value.title}
                                     </Typography>
-                                    <Typography color="text.secondary">
+                                    <Typography
+                                        variant="body2"
+                                        color="text.secondary"
+                                    >
                                         {value.desc}
                                     </Typography>
                                 </CardContent>
@@ -295,11 +304,12 @@ function AboutOne() {
                         textAlign="center"
                         fontWeight="bold"
                         gutterBottom
+                        sx={{ fontSize: { xs: "2rem", md: "3rem" } }}
                     >
                         World-Class Services
                     </Typography>
                     <Typography
-                        variant="body1"
+                        variant="body2"
                         textAlign="center"
                         sx={{ mb: 6, color: "#b0b0b0" }}
                     >
@@ -331,7 +341,10 @@ function AboutOne() {
                                     >
                                         {service.title}
                                     </Typography>
-                                    <Typography sx={{ color: "#b0b0b0" }}>
+                                    <Typography
+                                        variant="body2"
+                                        sx={{ color: "#b0b0b0" }}
+                                    >
                                         {service.desc}
                                     </Typography>
                                 </Paper>
@@ -351,11 +364,16 @@ function AboutOne() {
                         >
                             Our Achievements
                         </Typography>
-                        <Typography variant="h3" fontWeight="bold" gutterBottom>
+                        <Typography
+                            sx={{ fontSize: { xs: "2rem", md: "3rem" } }}
+                            variant="h3"
+                            fontWeight="bold"
+                            gutterBottom
+                        >
                             Recognized Excellence
                         </Typography>
                         <Typography
-                            variant="body1"
+                            variant="body2"
                             paragraph
                             color="text.secondary"
                         >
@@ -374,13 +392,13 @@ function AboutOne() {
                                     }}
                                 >
                                     <Typography
-                                        variant="body1"
+                                        variant="body2"
                                         fontWeight="bold"
                                     >
                                         {achievement.skill}
                                     </Typography>
                                     <Typography
-                                        variant="body1"
+                                        variant="body2"
                                         fontWeight="bold"
                                         color="#d4af37"
                                     >
@@ -425,22 +443,23 @@ function AboutOne() {
                         textAlign="center"
                         fontWeight="bold"
                         gutterBottom
+                        sx={{ fontSize: { xs: "2rem", md: "3rem" } }}
                     >
                         Meet Our Leadership Team
                     </Typography>
                     <Typography
-                        variant="body1"
+                        variant="body2"
                         textAlign="center"
                         color="text.secondary"
                         sx={{ mb: 6 }}
                     >
                         Experienced professionals dedicated to your comfort
                     </Typography>
-                    <Grid container spacing={4}>
+                    <Grid container spacing={4} justifyContent={"center"}>
                         {team.map((member, index) => (
                             <Grid
                                 item
-                                size={{ xs: 12, sm: 6, md: 3 }}
+                                size={{ xs: 10, sm: 6, md: 3 }}
                                 key={index}
                             >
                                 <Card
@@ -465,19 +484,21 @@ function AboutOne() {
                                             variant="h6"
                                             fontWeight="bold"
                                             gutterBottom
+                                            fontFamily={"Poppins"}
                                         >
                                             {member.name}
                                         </Typography>
                                         <Typography
                                             variant="subtitle2"
                                             color="#d4af37"
-                                            gutterBottom
+                                            fontFamily={"Poppins"}
                                         >
                                             {member.position}
                                         </Typography>
                                         <Typography
-                                            variant="body2"
+                                            variant="caption"
                                             color="text.secondary"
+                                            fontFamily={"Poppins"}
                                         >
                                             {member.description}
                                         </Typography>
@@ -499,16 +520,22 @@ function AboutOne() {
                 }}
             >
                 <Container maxWidth="md">
-                    <Typography variant="h3" fontWeight="bold" gutterBottom>
+                    <Typography
+                        variant="h3"
+                        fontSize={{ xs: "2rem", sm: "3rem" }}
+                        fontWeight="bold"
+                        gutterBottom
+                    >
                         Experience Grand Royale Hotel
                     </Typography>
-                    <Typography variant="h6" sx={{ mb: 4 }}>
+                    <Typography variant="body2" sx={{ mb: 4 }}>
                         Join thousands of satisfied guests who have made us
                         their preferred destination
                     </Typography>
                     <Box
                         sx={{
                             display: "flex",
+
                             gap: 2,
                             justifyContent: "center",
                         }}
@@ -521,24 +548,9 @@ function AboutOne() {
                                 color: "#d4af37",
                                 px: 4,
                                 py: 1.5,
+                                fontSize: { xs: "0.8rem", md: "0.9rem" },
+                                fontFamily: "Poppins",
                                 "&:hover": { bgcolor: "#f0f0f0" },
-                            }}
-                        >
-                            Book Your Stay
-                        </Button>
-                        <Button
-                            variant="outlined"
-                            size="large"
-                            sx={{
-                                borderColor: "white",
-                                color: "white",
-                                px: 4,
-                                borderWidth: 2,
-                                "&:hover": {
-                                    borderColor: "white",
-                                    borderWidth: 2,
-                                    bgcolor: "rgba(255,255,255,0.1)",
-                                },
                             }}
                         >
                             Contact Us

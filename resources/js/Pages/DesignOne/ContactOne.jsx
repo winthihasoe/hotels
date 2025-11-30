@@ -101,12 +101,13 @@ function ContactOne() {
                         sx={{
                             fontFamily: "Poppins, serif",
                             color: "#d4af37",
+                            fontSize: { xs: "2rem", md: "3rem" },
                         }}
                     >
                         Contact Us
                     </Typography>
                     <Typography
-                        variant="h6"
+                        variant="subtitle1"
                         sx={{
                             maxWidth: 600,
                             mx: "auto",
@@ -147,7 +148,7 @@ function ContactOne() {
                                         {info.icon}
                                     </Box>
                                     <Typography
-                                        variant="h6"
+                                        variant="subtitle1"
                                         fontWeight="bold"
                                         gutterBottom
                                     >
@@ -157,7 +158,7 @@ function ContactOne() {
                                         <Typography
                                             key={idx}
                                             color="text.secondary"
-                                            sx={{ mt: 1 }}
+                                            sx={{ mt: 1, fontSize: "0.8rem" }}
                                         >
                                             {detail}
                                         </Typography>
@@ -177,17 +178,18 @@ function ContactOne() {
                         <Grid item size={{ xs: 12, md: 6 }}>
                             <Paper elevation={3} sx={{ p: 4 }}>
                                 <Typography
-                                    variant="h4"
+                                    variant="h5"
                                     fontWeight="bold"
                                     gutterBottom
                                     sx={{
-                                        fontFamily: "Playfair Display, serif",
+                                        fontFamily: "Poppins, serif",
                                         color: "#d4af37",
                                     }}
                                 >
                                     Send Us a Message
                                 </Typography>
                                 <Typography
+                                    variant="subtitle2"
                                     color="text.secondary"
                                     paragraph
                                     sx={{ mb: 3 }}
@@ -263,6 +265,7 @@ function ContactOne() {
                                                 endIcon={<Send />}
                                                 sx={{
                                                     bgcolor: "#d4af37",
+                                                    fontFamily: "Poppins",
                                                     color: "white",
                                                     py: 1.5,
                                                     "&:hover": {
@@ -368,17 +371,17 @@ function ContactOne() {
                     }}
                 >
                     <Typography
-                        variant="h4"
+                        variant="h5"
                         fontWeight="bold"
                         gutterBottom
                         sx={{
-                            fontFamily: "Playfair Display, serif",
+                            fontFamily: "Poppins, serif",
                             color: "#d4af37",
                         }}
                     >
                         Need Immediate Assistance?
                     </Typography>
-                    <Typography variant="h6" paragraph>
+                    <Typography variant="subtitle2" paragraph>
                         Our 24/7 concierge team is always here to help
                     </Typography>
                     <Button
@@ -390,10 +393,12 @@ function ContactOne() {
                             color: "white",
                             px: 4,
                             py: 1.5,
+                            fontFamily: "Poppins, serif",
+                            mt: 2,
                             "&:hover": { bgcolor: "#b8941f" },
                         }}
                     >
-                        Call Now: +1 (555) 123-4567
+                        +1 (555) 123-4567
                     </Button>
                 </Card>
             </Container>

@@ -218,7 +218,10 @@ function FooterOne() {
                         gap: 2,
                     }}
                 >
-                    <Typography variant="body2" sx={{ color: "#b0b0b0" }}>
+                    <Typography
+                        variant="body2"
+                        sx={{ fontSize: "0.7rem", color: "#b0b0b0" }}
+                    >
                         © 2024 Grand Royale Hotel. All rights reserved.
                     </Typography>
                     <Box sx={{ display: "flex", gap: 3 }}>
@@ -227,6 +230,7 @@ function FooterOne() {
                             sx={{
                                 color: "#b0b0b0",
                                 cursor: "pointer",
+                                fontSize: "0.7rem",
                                 "&:hover": { color: "#d4af37" },
                             }}
                         >
@@ -235,6 +239,7 @@ function FooterOne() {
                         <Typography
                             variant="body2"
                             sx={{
+                                fontSize: "0.7rem",
                                 color: "#b0b0b0",
                                 cursor: "pointer",
                                 "&:hover": { color: "#d4af37" },

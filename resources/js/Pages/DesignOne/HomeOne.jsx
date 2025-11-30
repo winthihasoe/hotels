@@ -90,10 +90,15 @@ function HomeOne() {
                 }}
             >
                 <Container maxWidth="lg">
-                    <Typography variant="h2" fontWeight="bold" gutterBottom>
+                    <Typography
+                        variant="h2"
+                        fontWeight="bold"
+                        sx={{ fontSize: { xs: "2.8rem", md: "3.5rem" } }}
+                        gutterBottom
+                    >
                         Welcome to Grand Royale Hotel
                     </Typography>
-                    <Typography variant="h5" sx={{ mb: 4 }}>
+                    <Typography variant="h6" sx={{ mb: 4 }}>
                         Experience luxury and comfort in the heart of the city
                     </Typography>
                     <Button
